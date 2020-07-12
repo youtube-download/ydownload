@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f2f50d0308.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+
+    <title>Y Download</title>
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="py-5">
+        <div class="form__group field">
+          <input
+            type="input"
+            class="form__field"
+            placeholder="Name"
+            name="name"
+            id="url"
+            required
+          />
+          <label for="name" class="form__label">YouTube Video Link</label>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-light" id="submit_btn">Submit</button>
+        </div>
+      </div>
+
+      <div class="text-light heading my-5" id="audio_heading">
+        <i class="fas fa-music mr-3"></i> Audio Download Links
+      </div>
+
+      <div id="audio_container" class="container-fluid">
+        <div class="row border-bottom py-3 mb-3 border-secondary text-light">
+          <div class="col-3 detail">
+            128 kbps
+          </div>
+          <div class="col-3 detail">
+            100mb
+          </div>
+          <div class="col-3 detail">
+            mp4
+          </div>
+          <div class="col-3">
+            <button class="btn btn-success shadow">
+              Download <i class="fas fa-download"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row border-bottom py-3 mb-3 border-secondary text-light">
+          <div class="col-3 detail">
+            128 kbps
+          </div>
+          <div class="col-3 detail">
+            100mb
+          </div>
+          <div class="col-3 detail">
+            mp4
+          </div>
+          <div class="col-3">
+            <button class="btn btn-success shadow">
+              Download <i class="fas fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-light heading my-5" id="video_heading">
+        <i class="fas fa-video mr-3"></i>Video Download Links
+      </div>
+
+      <div id="video_container" class="container-fluid">
+        <div class="row text-light border-bottom border-secondary py-3 mb-3">
+          <div class="col-3 detail">
+            128 kbps
+          </div>
+          <div class="col-3 detail">
+            100mb
+          </div>
+          <div class="col-3 detail">
+            mp4
+          </div>
+          <div class="col-3">
+            <button class="btn btn-success shadow">
+              Download <i class="fas fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5 my-5 text-center text-light" id="message_box_container">
+        <div class="font-weight-bold py-5" id="message_box">
+          Enter URL of the YouTube video in the box
+        </div>
+      </div>
+
+      <div class="py-5 my-5 text-center text-light" id="loader">
+        <div class="py-5">
+          <img src="dist/img/preloader.gif" alt="" height="100" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="dist/js/app.bundle.js"></script>
+  </body>
+</html>
